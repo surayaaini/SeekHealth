@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+
+      body
+      {
+        background-image: url("Background.png");
+        background-position:center;
+        background-size: cover;
+        font-family:'Cardio';
+      }
+
+      .navbar
+      {
+        overflow: hidden;
+        background-color: #E7E8E9;
+        position: relative;
+        top: -90px;
+      }
+
+      .navbar a
+      {
+        position: relative;
+        top: 115px;
+        float: right;
+        /* display: block; */
+        color: #491C1D;
+        padding: 10px 20px;
+        text-align: justify;
+        text-decoration: none;
+        font-size: 22px;
+      }
+
+      .navbar img.left
+      {
+        float: left;
+        position: relative;
+        padding-top: 75px;
+        margin: 10px;
+        margin-bottom: -40px;
+        width: 300px;
+        height: 150px;
+        top: -10px;
+      }
+
+      .navbar a:hover
+      {
+        background-color: #F3D166;
+        color: #491C1D;
+        border-radius: 15px;
+      }
+
+     .page_title
+     {
+       color: #202020;
+       margin: auto;
+       text-align: center;
+       font-size:30px;
+       font-family:'Cardio';
+     }
+
+     .row, .row > .column {
+       padding: 12px;
+     }
+
+
+     .column {
+       float: left;
+       width: 30%;
+     }
+
+     .content {
+       font-family:'Cardio';
+       padding: 12px;
+       text-align: center;
+     }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: #491C1D;
+      background-color: rgba(0,0,0,0.4);
+      font-family:'Cardio';
+}
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      font-family:'Cardio';
+    }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button
+  {
+    background-color: #F3D166; //Yellow
+    border: none;
+    color: #491C1D;
+    padding: 15px 32px;
+    font-weight: bold;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    box-shadow: 5px 5px #888888;
+    align-items:center;
+    justify-content: center;
+    display:flex;
+  }
+  .button2:hover
+  {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.19),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+</style>
+  </head>
+
+  <body>
+    <!-- Navigation Bar-->
+
+    <div class="navbar">
+      <img src="images\Seek.png" class="left" width="230" height="90">
+      <a href="ContactUs.html">CONTACT</a>
+      <a href="Subscribe Form.html">SUBSCRIBE</a>
+      <a href="MealPlans.html">MEAL PLANS</a>
+      <a href="HowItWork.html">HOW IT WORKS</a>
+      <a href="Homepage.html">HOME</a>
+    </div>
+
+    <!--Header-->
+
+  <div class="page_title" style="position: relative; top:-50px"><h1  style ="color:#578a0c ;">MEAT AND VEGGIES</h1></div>
+  <div class="row">
+
+    <!-- Column 1: Banh Mi -->
+
+   <div class="column" style="background-color:#d9ffca ;">
+     <div class="content">
+       <img src="images\Chicken_satay_banh_mi.jpg" style="width:100%">
+
+       <h2><br> Chicken Satay Banh Mi</h2>
+       <p><br>This fusion sandwich makes a fresh and flavourful dinner recipe.<br></p>
+       <p>Prep Time: 35 min<br></p>
+       <p>Calories: 559 calories<br><br></p>
+
+       <button data-modal ="myModal"  id="myBtn" class="button button2 openmodal">DETAILS</button>
+       <br><br>
+
+       <!-- The Modal -->
+       <div id="myModal" class="modal">
+
+         <!-- Modal content -->
+        <div class="modal-content">
+          <div  data-modal ="myModal" class="close">&times;</div>
+          <h4>Please review the ingredients below for any allergens and/or food sensitiviites</h4>
+          <p>
+            Chicken tenderloins <br>
+            2 tablespoons vegetable oil <br>
+            4 Vietnamese white bread rolls<br>
+            2 teaspoons sugar<br>
+            2 tablespoons white vinegar<br>
+            1 carrot<br>
+            1 Lebanese cucumber<br>
+            Kewpie mayonnaise to serve<br>
+            1 green onion, sliced into thin strips<br>
+            ¼ cup fresh coriander, leaves and stem for garnish<br>
+            Sliced red chilli (optional)<br>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Column 2: Teriyaki Noodles -->
+
+   <div class="column" style="background-color:#EBFFE3 ;">
+     <div class="content">
+     <img src="images\Teriyaki_beef_noodles.jpg" style="width:100%">
+     <h2><br>Teriyaki Beef Noodles</h2>
+     <p><br>Indulge in our special handmade noodles and decadent beef teriyaki.<br></p>
+     <p>Prep Time: 42 min<br></p>
+     <p>Calories : 458 calories<br><br></p>
+
+     <button data-modal ="myModal2"  id="myBtn2" class="button button2 openmodal">DETAILS</button>
+     <br><br>
+
+     <!-- The Modal -->
+     <div id="myModal2" class="modal">
+
+       <!-- Modal content -->
+      <div class="modal-content">
+        <div data-modal ="myModal2"  class="close">&times;</div>
+        <h4>Please review the ingredients below for any allergens and/or food sensitiviites</h4>
+        <p>
+          2 tablespoons vegetable oil<br>
+          500g rump steak, cut into thin strips<br>
+          1 carrot, halved lengthways, thinly sliced diagonally<br>
+          1 red capsicum, deseeded, thinly sliced<br>
+          1 bunch broccolini, trimmed, halved lengthways, cut into thirds<br>
+          100g snow peas, trimmed, halved lengthways diagonally<br>
+          4 green onions, thinly sliced diagonally<br>
+          200g Passage to Asia Teriyaki Chicken Stir-fry Sauce<br>
+          450g pkt hokkien noodles, cooked, drained<br>
+          Toasted sesame seeds, to serve<br>
+          Extra thinly sliced green onions, to serve<br>
+        </p>
+          </div>
+        </div>
+     </div>
+   </div>
+
+
+   <!-- Column 3: Teriyaki Chicken -->
+
+   <div class="column" style="background-color:#d9ffca ;">
+     <div class="content">
+     <img src="images\Teriyaki_chicken.jpg" style="width:100%">
+      <h2><br>Quick Teriyaki Chicken</h2>
+     <p><br>A quick and easy Japanese Teriyaki chicken recipe perfect for a dinner. </p>
+     <p>Prep Time: 20 min<br></p>
+     <p>Calories : 330 calories<br><br></p>
+     <button data-modal ="myModal3"  id="myBtn3" class="button button3 openmodal">DETAILS</button>
+     <br><br>
+
+     <!-- The Modal -->
+     <div id="myModal3" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div data-modal ="myModal3"  class="close">&times;</div>
+        <h4>Please review the ingredients below for any allergens and/or food sensitiviites</h4>
+        <p>
+          500g chicken thigh fillets, cut into large pieces <br>
+          255g Street Kitchen Japanese Teriyaki Chicken kit<br>
+          2 tablespoons vegetable oil<br>
+          4 green onions, cut into 4cm pieces<br>
+          150g sugar snap peas, trimmed<br>
+          100g snow peas, halved lengthways diagonally<br>
+          100g baby corn, halved lengthways<br>
+          Noodles, to serve<br>
+          Extra thinly sliced green onions, to serve</p><br><br>
+      </div>
+     </div>
+   </div>
+  </div>
+
+  <!-- Script for Modal  -->
+
+  </body>
+  <script>
+  let b = document.getElementsByClassName("openmodal");
+  let c = document.getElementsByClassName("close");
+
+  for (const a of c) {
+    a.onclick = closeModal;
+  }
+
+  for (const a of b) {
+      a.onclick = openModal;
+  }
+
+  function openModal(e) {
+    let a = e.currentTarget;
+    let modal = document.getElementById(a.dataset.modal);
+    modal.style.display = "block";
+  }
+
+
+  function closeModal(e) {
+    let a = e.currentTarget;
+    let modal = document.getElementById(a.dataset.modal);
+    modal.style.display = "none";
+  }
+
+</script>
+</html>

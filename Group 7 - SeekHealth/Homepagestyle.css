@@ -1,0 +1,222 @@
+body, html {
+  height: 100%;
+  margin: 0px;
+
+}
+
+.bg-image {
+
+  background-image: url("Homepage background.png");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+.navbar
+    {
+      overflow: hidden;
+      background-color: #E7E8E9;
+      position: relative;
+      top: -90px;
+    }
+
+.navbar a
+    {
+      position: relative;
+      top: 115px;
+      float: right;
+      /* display: block; */
+      color: #491C1D;
+      padding: 10px 20px;
+      text-align: justify;
+      text-decoration: none;
+      font-size: 22px;
+    }
+
+ .navbar img.left
+    {
+      float: left;
+      position: relative;
+      padding-top: 75px;
+      margin: 10px;
+
+    }
+
+ .navbar a:hover
+    {
+      background-color: #F3D166;
+      color: #491C1D;
+      border-radius: 15px;
+    }
+.container {
+            display: flex;
+            align-items: center;
+            justify-content: center
+            margin: 20px;
+
+          }
+          img {
+            max-width: 100%
+          }
+          .image {
+            flex-basis:40%;
+            order: 2;
+          }
+          .catchphrase {
+            padding : 130px;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: lighter;
+
+          }
+          .fit {
+            text-indent: 25%;
+            color: #491C1D;
+            font-family: Cardo;
+
+          }
+          .text {
+            color: #A68671;
+            font-size: 20px;
+            font-style: oblique;
+            text-align: center;
+          }
+
+          .button {
+            background-color: #F3D166;
+            border-radius: 55px;
+            color: white;
+            font-family: Cardo;
+            font-style: normal;
+            font-size: 20px;
+            padding: 20px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            margin-left: 50px;
+            margin-top : 30px;
+            cursor: pointer;
+          }
+          .button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+          }
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+
+  }
+        img {
+          max-width: 100%;
+
+        }
+        .image2 {
+          flex-basis: 50%;
+
+        }
+
+        h2.whatseek {
+          font-size: 45px;
+          font-family: Cardo;
+          padding-left:25px;
+          letter-spacing: 3px;
+          color: #F3D166;
+        }
+
+        .text3 {
+        font-size: 40px;
+        padding-right: 50px;
+        margin-left: 60px;
+        font-style: italic;
+
+        }
+
+        .row, .column {
+        box-sizing: border-box;
+       }
+
+       .row {
+         display: flex;
+       }
+      .column {
+        flex: 50%;
+        float: left;
+        width: 30%;
+        padding: 10px;
+        height: 600px;
+        margin: 15px;
+        padding-top: 30px;
+        border-radius: 25px;
+
+      }
+
+      p.sdg {
+      margin-right: 10px;
+      margin-left: 20px;
+      margin-top: 65px;
+      position: relative;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .video {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+
+      }
+
+
+
+        .header2 {
+          font-family: Cardo;
+          color: #491C1D;
+          text-align : center;
+          font-size: 30px;
+          padding-top: 100px;
+        }
+
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+        }
+
+
+
+
+.container3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      padding-bottom: 100px;
+      }
+      img {
+        max-width: 100%
+      }
+      .image3 {
+        flex-basis: 150%
+      }
+      h3.mission {
+        color : #F3D166;
+        font-style: italic;
+      }
+      .text4 {
+        font-size: 30px;
+        padding : 50px;
+        font-family: Cardo;
+      }

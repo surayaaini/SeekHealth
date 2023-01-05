@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title></title>
+
+  <style type="text/css">
+    *{
+      margin:0;
+      padding:0;
+    }
+
+    body
+    {
+      background-image: url(Background.png);
+      background-position:center;
+      background-size: cover;
+      font-family:'Cardio';
+    }
+
+    .heading
+    {
+      text-align: center;
+    }
+
+    .navbar
+    {
+      overflow: hidden;
+      background-color: #E7E8E9;
+      position: relative;
+      top: -100px;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a
+    {
+      position: relative;
+      top: 140px;
+      float: right;
+      /* display: block; */
+      color: #491C1D;
+      padding: 10px 20px;
+      text-align: justify;
+      text-decoration: none;
+      font-size: 22px;
+    }
+
+    /* Right-aligned link */
+    .navbar a.left
+    {
+      float: left;
+      position: relative;
+      top: 60px;
+
+    }
+
+    /* Change color on hover */
+    .navbar a:hover
+    {
+      background-color: #F3D166;
+      color: #491C1D;
+    }
+
+    .regform
+    {
+      color: #84D012;
+      margin: auto;
+      text-align: center;
+      font-size:30px;
+    }
+    .main
+    {
+      background-color: #E5B57E;
+      width:800px;
+      margin:auto;
+    }
+      form
+      {
+        padding:10px;
+      }
+
+    .description
+    {
+      font-size:430px;
+    }
+
+    #name
+    {
+      width: 100%;
+      height: 100px;
+    }
+    .name
+    {
+      color: #23344A;
+      font-family: 'Arial';
+      margin-left: 30px;
+      margin-top: 30px;
+      width: 125px;
+      font-size: 18px;
+      font-weight; 700;
+    }
+
+    .name2
+    {
+      color: #23344A;
+      font-family: 'Arial';
+      margin-left: 30px;
+    }
+
+    .name3
+    {
+      position:relative;
+      color: #23344A;
+      font-family: 'Arial';
+      margin-left: 30px;
+      top:35px;
+    }
+
+    .firstname
+    {
+      position: relative;
+      left:200px;
+      width: 225px;
+      line-height: 40px;
+      border-radius: 5px;
+      padding: 0 22px;
+      font-size: 16px;
+      background-color: #E7E8E9;
+    }
+
+
+    .lastname
+    {
+      position: relative;
+      left: 430px;
+      width: 225px;
+      top: -43px;
+      line-height: 40px;
+      border-radius:5px;
+      padding: 0 22px;
+      font-size:16px;
+      background-color: #E7E8E9;
+
+    }
+
+    .firstlabel
+    {
+      font-family: 'Arial';
+      position: relative;
+      color:brown;
+      text-transform: capitalize;
+      font-size: 14px;
+      right:-205px;
+      top:-10px;
+    }
+
+    .lastlabel
+    {
+      font-family: 'Arial';
+      position: relative;
+      color:brown;
+      text-transform: capitalize;
+      font-size: 14px;
+      left:160px;
+      top:-10px;
+    }
+
+    .email
+    {
+      position: relative;
+      left:200px;
+      top:-37px;
+      line-height:40px;
+      width: 520px;
+      border-radius: 5px;
+      padding: 0 22px;
+      color:black;
+      background-color: #E7E8E9;
+
+    }
+
+    .phoneno
+    {
+      position: relative;
+      left:200px;
+      top:-37px;
+      line-height:40px;
+      width: 520px;
+      border-radius: 5px;
+      padding: 0 22px;
+      color:black;
+      background-color: #E7E8E9;
+
+    }
+
+    .address
+    {
+      position: relative;
+      left:200px;
+      top:-37px;
+      width: 520px;
+      line-height:100px;
+      border-radius: 5px;
+      padding: 0 22px;
+      background-color: #E7E8E9;
+    }
+
+    textarea
+    {
+      position: relative;
+      left:200px;
+      top:-37px;
+      line-height:100px;
+      width: 520px;
+      border-radius: 5px;
+      padding: 0 22px;
+      background-color: #E7E8E9;
+    }
+
+
+    .months
+    {
+      position: relative;
+      left:200px;
+      top:-37px;
+      line-height:40px;
+      width: 520px;
+      border-radius: 5px;
+      padding: 0 22px;
+      background-color: #E7E8E9;
+    }
+
+
+    .option
+    {
+      position: relative;
+      left:200px;
+      top:-37px;
+      line-height: 40px;
+      width: 570px;
+      height: 40px;
+      border-radius:5px;
+      padding: 0 22px;
+      background-color: #E7E8E9;
+    }
+
+
+    .radio
+    {
+      display: inline-block;
+      font-family: 'Arial';
+      margin-bottom: 20px;
+      font-size: 17px;
+      margin-left: 200px;
+      width: 485px;
+    }
+
+    .confirmation
+    {
+      margin-left:30px;
+      font-family: 'Arial';
+
+    }
+
+    .invoice
+    {
+      position: relative;
+      margin-left:30px;
+      top:-10px;
+      line-height:40px;
+      width: 696px;
+      border-radius: 5px;
+      padding: 0 22px;
+      color:black;
+      background-color: #E7E8E9;
+    }
+
+    .button
+    {
+      background-color: #F3D166; //Yellow
+      border: none;
+      color: #491C1D;
+      padding: 15px 32px;
+      font-weight: bold;
+
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: auto;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      box-shadow: 5px 5px #888888;
+      align-items:center;
+      justify-content: center;
+      display:flex;
+    }
+    .button2:hover
+    {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.19),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    /* SUBSCRIBE BUTTON (MODAL)*/
+
+    /* The Modal (background) */
+    .modal
+    {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+    font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus
+    {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    .modal
+    {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+
+
+
+</style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#" class="left"><img src="Seek.png" width="330" height="200"</a>
+    <a href="ContactUs.html">CONTACT</a>
+    <a href="Subscribe Form.html">SUBSCRIBE</a>
+    <a href="MealPlans.html">MEAL PLANS</a>
+    <a href="HowItWork.html">HOW IT WORKS</a>
+    <a href="Homepage.html">HOME</a>
+  </div>
+
+  <div class="regform" style="position: relative; top:-50px"><h1>SUBSCRIBE</h1></div>
+  <center><p style="font-size:25px; position: relative; bottom:20px"<center>Interested in our service? Submit the form below to subscribe!</center></p></center><br>
+  <div class="main">
+    <h3 class = "name3">Full Name</h3>
+      <div id="name">
+        <input class="firstname" type = "text" name="first_name"><br>
+        <label class="firstlabel">first name</label>
+        <input class="lastname" type="text" name="last_name">
+        <label class="lastlabel">last name</label>
+      </div>
+
+      <h3 class="name">Email</h3>
+      <input class="email" type = "text" name="email">
+
+      <h3 class="name">Phone Number</h3>
+      <input class="phoneno" type = "text" name="phoneno">
+
+      <h3 class="name">Address</h3>
+      <textarea id="address" name="address" cols="50"></textarea>
+
+      <h3 class = "name">Meal Plan</h3>
+      <label class="radio"><input type="radio" name="choice-radio"> Meat & Veggies (RM70/month)</label>
+      <label class="radio"><input type="radio" name="choice-radio"> Vegetarian (RM80/month)</label>
+      <label class="radio"><input type="radio" name="choice-radio"> Vegan (RM 65/month)</label>
+      <br>
+      <br>
+
+
+      <h3 class="name">No. of Months</h3>
+      <select class="option" name="payment">
+        <option cod="cod" selected="selected">Choose option</option>
+        <option>1 Month [trial]</option>
+        <option>3 Months</option>
+        <option>6 Months</option>
+        <option>12 Months (1 year)</option>
+        <option>24 Months (2 years)</option>
+      </select>
+
+
+      <h3 class="name"> Payment Mode </h3>
+      <select class="option" name="payment">
+        <option cod="cod" selected="selected">Choose option</option>
+        <option>Cash on Delivery (COD)</option>
+        <option>Online Transfer</option>
+      </select>
+
+      <h3 class="name2">For online transfer, please enter the invoice number</h3>
+      <p class = "confirmation">We will send a confirmation email if your payment was completed/verified</p><br>
+      <input class="invoice" type = "text" name="invoice">
+      <br><br><br>
+
+      <!-- <button id="myBtn" class="button2">SUBSCRIBE</button> -->
+      <button id="myBtn" class="button button2">SUBSCRIBE</button>
+      <br><br>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Thank you! You have successfully subscribed to SeekHealth's services.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!--JAVASCRIPT (SUBSCRIBE)-->
+    <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+
+      body
+      {
+        background-image: url("Background.png");
+        background-position:center;
+        background-size: cover;
+        font-family:'Cardio';
+      }
+
+      .navbar
+      {
+        overflow: hidden;
+        background-color: #E7E8E9;
+        position: relative;
+        top: -90px;
+      }
+
+      .navbar a
+      {
+        position: relative;
+        top: 115px;
+        float: right;
+        /* display: block; */
+        color: #491C1D;
+        padding: 10px 20px;
+        text-align: justify;
+        text-decoration: none;
+        font-size: 22px;
+      }
+
+      .navbar img.left
+      {
+        float: left;
+        position: relative;
+        padding-top: 75px;
+        margin: 10px;
+        margin-bottom: -40px;
+        width: 300px;
+        height: 150px;
+        top: -10px;
+      }
+
+      .navbar a:hover
+      {
+        background-color: #F3D166;
+        color: #491C1D;
+        border-radius: 15px;
+      }
+
+     .page_title
+     {
+       color: #202020;
+       margin: auto;
+       text-align: center;
+       font-size:30px;
+       font-family:'Cardio';
+     }
+
+     /* Add padding BETWEEN each column */
+     .row, .row > .column {
+       padding: 12px;
+     }
+
+     .column {
+       float: left;
+       width: 30%;
+     }
+
+     .content {
+       font-family:'Cardio';
+       padding: 12px;
+       text-align: center;
+     }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: #491C1D;
+      background-color: rgba(0,0,0,0.4);
+      font-family:'Cardio';
+      }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      font-family:'Cardio';
+    }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button
+  {
+    background-color: #F3D166; //Yellow
+    border: none;
+    color: #491C1D;
+    padding: 15px 32px;
+    font-weight: bold;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    box-shadow: 5px 5px #888888;
+    align-items:center;
+    justify-content: center;
+    display:flex;
+  }
+  .button2:hover
+  {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.19),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+</style>
+  </head>
+
+  <body>
+    <!--Navigation Bar -->
+
+    <div class="navbar">
+      <img src="images\Seek.png" class="left" width="230" height="90">
+      <a href="ContactUs.html">CONTACT</a>
+      <a href="Subscribe Form.html">SUBSCRIBE</a>
+      <a href="MealPlans.html">MEAL PLANS</a>
+      <a href="HowItWork.html">HOW IT WORKS</a>
+      <a href="Homepage.html">HOME</a>
+    </div>
+
+    <!--Header -->
+  <div class="page_title" style="position: relative; top:-50px"><h1 style ="color:#578a0c ;">CHOOSE YOUR DIET</h1></div>
+  <div class="row">
+
+    <!--Column 1: Meat and veggies -->
+
+   <div class="column" style="background-color:#d9ffca ;">
+     <div class="content">
+       <img src="images\MeatAndVeggies.jpg" style="width:100%" >
+
+       <h2><br> Meat And Veggies</h2>
+       <p><br>For all you meat lovers out there, choose this plan to satisfy you tastebuds!
+         Try these  meat and veggie meals that mix chicken, beef or
+         lamb with a range of vegetables. With different varieties of options each week,
+         these will be favourite ways to eat your meat!
+
+       <p>View this weeks options: <br><br></p>
+
+       <a href="meatAndVeggies.html"><button id="myBtn" class="button button2 ">OPTIONS</button></a>
+
+       <br><br>
+
+      </div>
+    </div>
+
+    <!--Column 2:Vegetarian -->
+
+   <div class="column" style="background-color:#EBFFE3 ;">
+     <div class="content">
+     <img src="images\Vegetarian.jpg" style="width:100%">
+     <h2 ><br>Vegetarian</h2>
+     <p><br>For all you meat lovers out there, choose this plan to satisfy you tastebuds!
+       Try these  meat and veggie meals that mix chicken, beef or
+       lamb with a range of vegetables. With different varieties of options each week,
+       these will be favourite ways to eat your meat!
+
+     <p>View this weeks options: <br><br></p>
+
+     <a href="Vegetarian.html"><button id="myBtn" class="button button2 ">OPTIONS</button></a>
+     <br><br>
+     </div>
+   </div>
+
+
+   <!--Column 3: Vegan-->
+
+   <div class="column" style="background-color:#d9ffca ;">
+     <div class="content">
+     <img src="images\Vegan.jpg" style="width:100%">
+      <h2><br>Vegan</h2>
+     <p><br>Being vegan does not need missing out on flavour or variety when it comes to cooking.
+       Fresh takes on worldwide tradionital dishes has never been more exciting.
+       Surprise even the most loyal meat-eater with one of our dinner options tonight! </p>
+     <p>View this weeks options: <br><br></p>
+
+     <a href="Vegan.html"><button id="myBtn" class="button button2 ">OPTIONS</button></a>
+     <br><br>
+
+   </div>
+  </div>
+
+
+  </body>
+
+  <!--Script for modal -->
+
+  <script>
+  let b = document.getElementsByClassName("openmodal");
+  let c = document.getElementsByClassName("close");
+
+  for (const a of c) {
+    a.onclick = closeModal;
+  }
+
+  for (const a of b) {
+      a.onclick = openModal;
+  }
+
+  function openModal(e) {
+    let a = e.currentTarget;
+    let modal = document.getElementById(a.dataset.modal);
+    modal.style.display = "block";
+  }
+
+
+  function closeModal(e) {
+    let a = e.currentTarget;
+    let modal = document.getElementById(a.dataset.modal);
+    modal.style.display = "none";
+  }
+
+</script>
+</html>

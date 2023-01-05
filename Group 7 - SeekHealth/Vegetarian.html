@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <style media="screen">
+
+      body
+      {
+        background-image: url("Background.png");
+        background-position:center;
+        background-size: cover;
+        font-family:'Cardio';
+      }
+
+      .navbar
+      {
+        overflow: hidden;
+        background-color: #E7E8E9;
+        position: relative;
+        top: -90px;
+      }
+
+      .navbar a
+      {
+        position: relative;
+        top: 115px;
+        float: right;
+        /* display: block; */
+        color: #491C1D;
+        padding: 10px 20px;
+        text-align: justify;
+        text-decoration: none;
+        font-size: 22px;
+      }
+
+      .navbar img.left
+      {
+        float: left;
+        position: relative;
+        padding-top: 75px;
+        margin: 10px;
+        margin-bottom: -40px;
+        width: 300px;
+        height: 150px;
+        top: -10px;
+      }
+
+      .navbar a:hover
+      {
+        background-color: #F3D166;
+        color: #491C1D;
+        border-radius: 15px;
+      }
+
+     .page_title
+     {
+       color: #202020;
+       margin: auto;
+       text-align: center;
+       font-size:30px;
+       font-family:'Cardio';
+     }
+
+     .row, .row > .column {
+       padding: 12px;
+     }
+
+     .column {
+       float: left;
+       width: 30%;
+     }
+
+     .content {
+       font-family:'Cardio';
+       padding: 12px;
+       text-align: center;
+     }
+
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: #491C1D; /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      font-family:'Cardio';
+}
+
+/* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      font-family:'Cardio';
+    }
+
+/* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button
+  {
+    background-color: #F3D166; //Yellow
+    border: none;
+    color: #491C1D;
+    padding: 15px 32px;
+    font-weight: bold;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 5px 5px #888888;
+    align-items:center;
+    justify-content: center;
+    display:flex;
+  }
+  .button2:hover
+  {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.19),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+</style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <img src="images\Seek.png" class="left" width="230" height="90">
+      <a href="Contact.html">CONTACT</a>
+      <a href="Subscribe Form.html">SUBSCRIBE</a>
+      <a href="MealPlans.html">MEAL PLANS</a>
+      <a href="HowItWork.html">HOW IT WORKS</a>
+      <a href="Homepage.html">HOME</a>
+    </div>
+
+
+   <div class="page_title" style="position: relative; top:-50px"><h1 style ="color:#578a0c ;">VEGETARIAN</h1></div>
+   <div class="row">
+    <div class="column" style="background-color:#d9ffca ;">
+      <div class="content">
+        <img src="images\Malyaysian_Rendang_jackfruit_tacos.jpg" style="width:100%">
+
+        <h2><br>Malaysian Rendang Jackfruit Tacos</h2>
+        <p><br>Easy jackfruit tacos filled with creamy and flavourful jackfruit rendang curry<br></p>
+        <p>Prep Time: 40 min<br></p>
+        <p>Calories: 520 calories<br><br></p>
+
+        <button data-modal ="myModal4"  id="myBtn4" class="button button2 openmodal">DETAILS</button>
+        <br><br>
+
+        <!-- The Modal -->
+        <div id="myModal4" class="modal">
+
+          <!-- Modal content -->
+         <div class="modal-content">
+           <div  data-modal ="myModal4" class="close">&times;</div>
+           <h4>Please review the ingredients below for any allergens and/or food sensitiviites</h4>
+           <p>
+             2 tbsp caster sugar <br>
+             1 tbsp salt<br>
+             ¾ cup (185ml) white vinegar<br>
+             1 carrot, finely shredded<br>
+             1 Lebanese cucumber, cut into batons<br>
+             ½ red onion, thinly sliced<br>
+             ½ cup (125ml) plain Greek yoghurt<br>
+             ¼ cup chopped mint<br>
+             2 tbsp lemon juice<br>
+             1 tsp salt<br>
+             1 tbsp vegetable oil<br>
+             1 onion, finely sliced<br>
+             1 x 400g can jackfruit in brine, drained and rinsed<br>
+             1 x 200g Passage to Asia Malaysian Rendang Simmer Sauce<br>
+             ½ cup (125ml) coconut cream<br>
+             12 medium flour tortillas<br>
+             Coriander leaves and lime wedges to serve<br>
+         </div>
+       </div>
+     </div>
+  </div>
+
+   <div class="column" style="background-color:#EBFFE3 ;">
+     <div class="content">
+     <img src="images\Sweet_potato.jpg" style="width:100%">
+     <h2><br>Sweet Potato and Broccoli Frittata</h2>
+     <p><br> Make this sweet potato broccoli frittata for an easy weeknight dinner served with a little salad<br></p>
+     <p>Prep Time: 25 min<br></p>
+     <p>Calories : 700 calories<br><br></p>
+
+     <button data-modal ="myModal5"  id="myBtn5" class="button button2 openmodal">DETAILS</button>
+     <br><br>
+
+     <!-- The Modal -->
+     <div id="myModal5" class="modal">
+
+       <!-- Modal content -->
+      <div class="modal-content">
+        <div data-modal ="myModal5"  class="close">&times;</div>
+        <h4>Please review the ingredients below for any allergens and/or food sensitiviites</h4>
+        <p>
+          500g Sweet Potato, peeled, thinly sliced <br>
+          Olive oil spray<br>
+          8 eggs<br>
+          1/2 cup (125ml) light thickened cream<br>
+          3/4 cup (90g) grated tasty cheese<br>
+          100g small broccoli florets, blanched<br>
+          2 tablespoons shredded basil<br>
+</p><br><br>
+        </div>
+      </div>
+     </div>
+   </div>
+
+
+   <div class="column" style="background-color:#d9ffca ;">
+     <div class="content">
+     <img src="images\Roasted_Capsicum_Eggplant_Pizza_Scrolls.jpg" style="width:100%">
+      <h2><br>Eggplant Pizza <br>Scrolls</h2>
+     <p><br>These pizza scrolls can be cooked in a pie maker or in the oven. They're great in lunch boxes too.  </p>
+     <p>Prep Time: 40 min<br></p>
+     <p>Calories : 680 calories<br><br></p>
+     <button data-modal ="myModal6"  id="myBtn6" class="button button3 openmodal">DETAILS</button>
+     <br><br>
+
+     <!-- The Modal -->
+     <div id="myModal6" class="modal">
+
+       <!-- Modal content -->
+      <div class="modal-content">
+        <div data-modal ="myModal6"  class="close">&times;</div>
+        <h4>Please review the ingredients below for any allergens and/or food sensitiviites</h4>
+        <p>
+          ½ quantity of basic pizza dough<br>
+          1 tbsp. pizza sauce<br>
+          1 ⅓ cups (150 g) Perfect Italiano™ Perfect Pizza cheese<br>
+          1 cup (200 g) baby spinach leaves, coarsely chopped<br>
+          ¼ cup (40 g) roasted capsicum, finely diced<br>
+          ¼ cup (35 g) char-grilled eggplant, finely diced<br>
+        </p>
+          <br><br>
+        </div>
+      </div>
+    </div>
+   </div>
+
+
+
+  </body>
+  <script>
+  let b = document.getElementsByClassName("openmodal");
+  let c = document.getElementsByClassName("close");
+
+  for (const a of c) {
+    a.onclick = closeModal;
+  }
+
+  for (const a of b) {
+      a.onclick = openModal;
+  }
+
+  function openModal(e) {
+    let a = e.currentTarget;
+    let modal = document.getElementById(a.dataset.modal);
+    modal.style.display = "block";
+  }
+
+
+  function closeModal(e) {
+    let a = e.currentTarget;
+    let modal = document.getElementById(a.dataset.modal);
+    modal.style.display = "none";
+  }
+
+</script>
+</html>
